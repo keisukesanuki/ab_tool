@@ -26,10 +26,19 @@ if (isset($_POST["url_ad"])){
 	<body>
 		<h4>Apache Bench</h4>
 		<form action="" method ="post">
-			<p>Number of requests :<input type="text" name="Number_of_requests"></p><br/>
-			<p>Number of threads :<input type="text" name="Number_of_threads"></p><br/>
-			<p>URL :<input type="text" name="url_ad"></p><br/>
-			<input type = "submit" value ="実行">
+		<div class="cp_iptxt">
+			<p>Number of requests<input type="text" name="Number_of_requests"></p><br/>
+			<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+		</div>
+		<div class="cp_iptxt">
+			<p>Number of threads<input type="text" name="Number_of_threads"></p><br/>
+			<i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+		</div>
+		<div class="cp_iptxt">
+			<p>URL<input type="text" name="url_ad"></p><br/>
+			<i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+		</div>
+			<input type = "submit" value ="実行" class="btn">
 		</form>
         </body>
 </html>
