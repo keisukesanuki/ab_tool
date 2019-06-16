@@ -23,7 +23,7 @@ if (isset($_POST["url_ad"])){
 		<title>load tool</title>
 		</head>
 	<body>
-		<h4>リクエスト数</h4>
+		<h4>Apache Bench</h4>
 		<form action="" method ="post">
 			<p>Number of requests :<input type="text" name="Number_of_requests"></p><br/>
 			<p>Number of threads :<input type="text" name="Number_of_threads"></p><br/>
@@ -39,7 +39,7 @@ if (isset($_POST["url_ad"])){
 	#結果を出力するディレクトリ名を定義
 	$resultdir = "result";
 	#ドキュメントルートを定義
-	$doc_root = "/var/www/html";
+	$doc_root = "/opt/ab_tool";
 
 	$outdir = "$doc_root/$resultdir";
 	mkdir("$outdir");
