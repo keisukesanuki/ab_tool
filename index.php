@@ -20,6 +20,7 @@ if (isset($_POST["url_ad"])){
 <html lang = "ja">
 		<head>
 			<mera charset = "UFT-8">
+			<link rel="stylesheet" href="./default.css" type="text/css">
 		<title>load tool</title>
 		</head>
 	<body>
@@ -28,7 +29,7 @@ if (isset($_POST["url_ad"])){
 			<p>Number of requests :<input type="text" name="Number_of_requests"></p><br/>
 			<p>Number of threads :<input type="text" name="Number_of_threads"></p><br/>
 			<p>URL :<input type="text" name="url_ad"></p><br/>
-			<input type = "submit" value ="送信">
+			<input type = "submit" value ="実行">
 		</form>
         </body>
 </html>
