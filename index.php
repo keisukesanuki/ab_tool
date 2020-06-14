@@ -66,14 +66,8 @@ if (isset($_POST["url_ad"])){
 }
         echo "実行結果：".$return_result;
 	echo "<br />";
-	echo "http://$server_ip/$resultdir/$date.html";
+	echo "http://$server_ip/ab_tool/$resultdir/$date.html";
 }
 
 #print_r($inet[21]);
 ?>
-
-
-
-
-
-
