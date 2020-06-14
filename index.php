@@ -53,7 +53,7 @@ if (isset($_POST["url_ad"])){
         #ホスト自身のIPアドレスを定義
         $server_ip = "192.168.33.10";
 
-	$outdir = "$doc_root/$resultdir";
+	$outdir = "$doc_root/ab_tool/$resultdir";
 	mkdir("$outdir");
 	touch("$outdir/$date.html");
 	$outfile = "$outdir/$date.html";
