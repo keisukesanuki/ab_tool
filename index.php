@@ -50,6 +50,8 @@ if (isset($_POST["url_ad"])){
 	$resultdir = "result";
 	#ドキュメントルートを定義
 	$doc_root = "/opt/ab_tool";
+        #ホスト自身のIPアドレスを定義
+        $server_ip = "192.168.33.10";
 
 	$outdir = "$doc_root/$resultdir";
 	mkdir("$outdir");
@@ -64,7 +66,7 @@ if (isset($_POST["url_ad"])){
 }
         echo "実行結果：".$return_result;
 	echo "<br />";
-	echo "http://192.168.33.88/$resultdir/$date.html";
+	echo "http://$server_ip/$resultdir/$date.html";
 }
 
 #print_r($inet[21]);
